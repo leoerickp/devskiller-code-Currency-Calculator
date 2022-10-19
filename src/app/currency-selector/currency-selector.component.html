@@ -1,0 +1,3 @@
+<select [(ngModel)]="value" (ngModelChange)="select($event)">
+    <option *ngFor="let currency of currencies; let i=index" [ngValue]="i">{{currency.code}}</option>
+</select>

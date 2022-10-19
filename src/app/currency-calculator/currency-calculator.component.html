@@ -1,0 +1,3 @@
+<input type="number" [(ngModel)]="amount" (ngModelChange)="newAmount($event)">
+<app-currency-selector (onSelect)="newCurrency($event)" [currencies]=currencies></app-currency-selector>
+<span *ngIf="result">is <span id="result">{{result}}</span> USD</span>
